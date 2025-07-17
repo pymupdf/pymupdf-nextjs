@@ -105,7 +105,7 @@ app.get(
       }
 
       const document = await loadDocumentFromUrl(url as string)
-      const result = document.get_xml_metadata()
+      const result = document.metadata
       res.json({ result })
     } catch (error) {
       next(error)
