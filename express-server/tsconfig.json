@@ -1,9 +1,10 @@
 {
-  "extends": "@tsconfig/node20/tsconfig.json",
   "compilerOptions": {
+    "module": "commonjs",
     "outDir": "dist",
-    "sourceMap": true,
-    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "strictNullChecks": true,
   },
-  "include": ["*.ts"],
+  "include": ["src/**/*.ts"],
 }

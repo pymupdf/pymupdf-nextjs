@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --foreground-rgb: rgb(0, 0, 0);
+  --background-rgb: rgb(214, 219, 220);
+  --viewer-bg-rgb: rgb(200, 200, 200);
+  --toolbar-bg-rgb: rgb(240, 240, 240);
+  --modal-overlay-rgba: rgb(190, 190, 190, 0.7);
+  --modal-content-rgb: rgb(235, 235, 235);
+  --modal-input-rgb: rgb(215, 215, 215);
+  --modal-button-hover-rgb: rgb(180, 180, 180);
+  --toolbar-button-hover-rgb: rgb();
+  --loading-bg-rgba: rgb(0, 0, 0, 0.4);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: rgb(255, 255, 255);
+    --background-rgb: rgb(0, 0, 0);
+    --viewer-bg-rgb: rgb(60, 60, 60);
+    --toolbar-bg-rgb: rgb(90, 90, 90);
+    --modal-overlay-rgba: rgb(70, 70, 70, 0.7);
+    --modal-content-rgb: rgb(31, 41, 55);
+    --modal-input-rgb: rgb(55, 65, 81);
+    --modal-button-hover-rgb: rgb(75, 85, 101);
+    --toolbar-button-hover-rgb: rgb(75, 75, 75);
+    --loading-bg-rgba: rgb(0, 0, 0, 0.7);
+  }
+}
+
+html, body {
+  scrollbar-gutter: stable;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: var(--foreground-rgb);
+  background: var(--background-rgb);
+}
